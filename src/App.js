@@ -15,7 +15,10 @@ const App = () => {
   const [name, setName] = useState("");
 
   // Countdown timer effect
+<<<<<<< HEAD
     // Countdown timer effect
+=======
+>>>>>>> 40806f2d610633544774e8bb256498882c3cbff4
   useEffect(() => {
     if (quizStarted && !quizEnd && timer > 0) {
       const countdown = setTimeout(() => {
@@ -28,9 +31,13 @@ const App = () => {
     if (timer === 0 && !quizEnd && quizStarted) {
       handleNextQuestion();
     }
+<<<<<<< HEAD
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timer, quizEnd, quizStarted]);  // Suppress warning about handleNextQuestion
+=======
+  }, [timer, quizEnd, quizStarted]);
+>>>>>>> 40806f2d610633544774e8bb256498882c3cbff4
 
   // Save score to localStorage once quiz ends
   useEffect(() => {
@@ -39,9 +46,13 @@ const App = () => {
       leaderboard.push({ name, score });
       localStorage.setItem("quiz-leaderboard", JSON.stringify(leaderboard));
     }
+<<<<<<< HEAD
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quizEnd, name, score]); // Added missing dependencies
 
+=======
+  }, [quizEnd]);
+>>>>>>> 40806f2d610633544774e8bb256498882c3cbff4
 
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
