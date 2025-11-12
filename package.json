@@ -15,16 +15,10 @@
     "web-vitals": "^2.1.4"
     
   },
-<<<<<<< HEAD
 
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
-=======
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
->>>>>>> 40806f2d610633544774e8bb256498882c3cbff4
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
